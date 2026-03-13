@@ -37,15 +37,13 @@ jobs:
       - name: Sign registry index (keyless)
         run: |
           cosign sign-blob --yes \
-            --output-signature registry-index.toml.sig \
-            --output-certificate registry-index.toml.pem \
+            --bundle registry-index.toml.sig \
             registry-index.toml
 
       - name: Verify just-generated signature
         run: |
           cosign verify-blob \
-            --signature registry-index.toml.sig \
-            --certificate registry-index.toml.pem \
+            --bundle registry-index.toml.sig \
             --certificate-identity-regexp "https://github.com/Preen-rs/preen-registry/.*" \
             --certificate-oidc-issuer "https://token.actions.githubusercontent.com" \
             registry-index.toml
