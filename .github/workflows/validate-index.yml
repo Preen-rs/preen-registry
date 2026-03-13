@@ -1,0 +1,27 @@
+name: Validate Registry Index
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate helper scripts syntax
+        run: python -m py_compile scripts/validate_index.py scripts/update_registry_entry.py scripts/registry_admin.py
+
+      - name: Validate registry-index.toml
+        run: python scripts/validate_index.py

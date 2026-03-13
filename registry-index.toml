@@ -1,0 +1,15 @@
+schema_version = 1
+generated_at = "2026-03-13T23:01:35Z"
+
+[[entries]]
+pack_id = "preen-rs.homebrew"
+name = "Homebrew Cleanup"
+description = "Clean Homebrew caches and remove orphaned dependencies"
+repo_url = "https://github.com/Preen-rs/preen-rulepack-homebrew"
+latest_version = "1.0.7"
+
+  [[entries.versions]]
+  version = "1.0.7"
+  rev = "381d2c7b496b0efce4ef8be8f89a74b0ba40c647"
+  manifest_hash = "sha256:0a3bb4042c659c630cf519551c48f050d13c1329bc990f5dd229ef6bcbb0a763"
+  trusted_identity = "https://github.com/Preen-rs/preen-rulepack-homebrew/.github/workflows/release-manual.yml@refs/heads/main"
