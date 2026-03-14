@@ -39,6 +39,7 @@ jobs:
           cosign sign-blob --yes \
             --bundle registry-index.toml.sig \
             registry-index.toml
+          test -s registry-index.toml.sig
 
       - name: Verify just-generated signature
         run: |
@@ -50,12 +51,12 @@ jobs:
 
       - name: Commit updated signature
         run: |
-          if git diff --quiet -- registry-index.toml.sig; then
+          git add -f registry-index.toml.sig
+          if git diff --cached --quiet -- registry-index.toml.sig; then
             echo "No signature changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add registry-index.toml.sig
           git commit -m "chore(registry): update index signature [skip ci]"
           git push
