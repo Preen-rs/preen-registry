@@ -1,5 +1,5 @@
 schema_version = 1
-generated_at = "2026-04-20T01:29:45Z"
+generated_at = "2026-04-20T05:50:20Z"
 
 [[entries]]
 pack_id = "preen-rs.homebrew"
@@ -38,7 +38,7 @@ pack_id = "preen-rs.performance.base"
 name = "Preen Performance Base"
 description = "Official base capability pack for performance-oriented Smart Care checks on macOS and Linux."
 repo_url = "https://github.com/Preen-rs/preen-rulepack-performance"
-latest_version = "0.1.1"
+latest_version = "0.1.2"
 
   [[entries.versions]]
   version = "0.1.0"
@@ -52,12 +52,18 @@ latest_version = "0.1.1"
   manifest_hash = "sha256:f4eabcb290b9031c7e0645159cd6e9b5cf2e78789a5ab4379ef8efcfc5063af0"
   trusted_identity = "https://github.com/Preen-rs/preen-rulepack-performance/.github/workflows/release-manual.yml@refs/heads/main"
 
+  [[entries.versions]]
+  version = "0.1.2"
+  rev = "19d85bc03535ef262ce41404f9e43ef63d52cfed"
+  manifest_hash = "sha256:e6afa9a92fed5a0200dd4fb5c4f4182fc26d31c0e099dfa6c314c0e798699125"
+  trusted_identity = "https://github.com/Preen-rs/preen-rulepack-performance/.github/workflows/release-manual.yml@refs/heads/main"
+
 [[entries]]
 pack_id = "preen-rs.applications.base"
 name = "Preen Applications Base"
 description = "Official base capability pack for applications-focused Smart Care checks on macOS and Linux."
 repo_url = "https://github.com/Preen-rs/preen-rulepack-applications"
-latest_version = "0.1.1"
+latest_version = "0.1.2"
 
   [[entries.versions]]
   version = "0.1.0"
@@ -71,12 +77,18 @@ latest_version = "0.1.1"
   manifest_hash = "sha256:7192ac700fbd3a035dce7e86a65181749c822c4abb3110a189195620934402f4"
   trusted_identity = "https://github.com/Preen-rs/preen-rulepack-applications/.github/workflows/release-manual.yml@refs/heads/main"
 
+  [[entries.versions]]
+  version = "0.1.2"
+  rev = "9dcca61c5719071b6b8c6f1f369cb24ef80b6b48"
+  manifest_hash = "sha256:5f5db6ead5a90a85e5cabac8d62437929f4ead7b053ac21c6cd65cbe490438ec"
+  trusted_identity = "https://github.com/Preen-rs/preen-rulepack-applications/.github/workflows/release-manual.yml@refs/heads/main"
+
 [[entries]]
 pack_id = "preen-rs.protection.base"
 name = "Preen Protection Base"
 description = "Official base capability pack for protection-focused Smart Care checks on macOS and Linux."
 repo_url = "https://github.com/Preen-rs/preen-rulepack-protection"
-latest_version = "0.1.1"
+latest_version = "0.1.2"
 
   [[entries.versions]]
   version = "0.1.0"
@@ -88,4 +100,10 @@ latest_version = "0.1.1"
   version = "0.1.1"
   rev = "0c6105abe6445dd339dc26e139347e7c7ee44ece"
   manifest_hash = "sha256:0f08fa248725fa53440bf4da84efd33276015eafa46c4e488d9ccc143cc31f90"
+  trusted_identity = "https://github.com/Preen-rs/preen-rulepack-protection/.github/workflows/release-manual.yml@refs/heads/main"
+
+  [[entries.versions]]
+  version = "0.1.2"
+  rev = "a913eeeea92d43d69dd91f7cb4e02be6b95799f5"
+  manifest_hash = "sha256:df032ac79b8fbbf3961316a6ef6f908694936d30195419aa2ccc1b244904bf91"
   trusted_identity = "https://github.com/Preen-rs/preen-rulepack-protection/.github/workflows/release-manual.yml@refs/heads/main"
